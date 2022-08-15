@@ -32,7 +32,9 @@ function searchCountry(){
             countryList.innerHTML = ""
             generateInfo(...data)
         }
-    })}
+    })
+    .catch(error => {console.log('error in catch', error)})
+}
 };
 
 function createList(array){
